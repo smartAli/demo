@@ -21,6 +21,8 @@
 	height: 100%;
 	float: right;
 	position: relative;
+    background: url("images/login-bg-right.jpg") no-repeat bottom center;
+    background-size: cover;
 }
 .login-wrap{
 	width: 412px;
@@ -92,7 +94,7 @@
 .login-form .col .login-btn {
     display: block;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
     width: 100%;
     line-height: 28px;
@@ -102,4 +104,10 @@
     border-radius: 3px;
     letter-spacing: .5em;
     cursor: pointer;
+}
+.login-form .col .login-btn:hover{
+    opacity: .7
+}
+.login-form .col .login-btn:active{
+    opacity: .9
 }

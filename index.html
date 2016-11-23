@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>特高压直流输电线路绝缘子运行状态综合评估系统</title>
+	<link rel="stylesheet" type="text/css" href="./static/base.css">
+	<link rel="stylesheet" type="text/css" href="./static/index.css">
+</head>
+<body class="innerbody">
+	<div class="main-top">
+		<h4><div class="logo"></div>特高压直流输电线路绝缘子运行状态综合评估系统</h4>
+		<div class="main-top_right">
+			<a href="javascript:;" class="main-top_right_btn main-top_right_btn_01"></a>
+			<a href="javascript:;" class="main-top_right_btn main-top_right_btn_02"></a>
+			<a href="javascript:;" class="main-top_right_btn main-top_right_btn_03"></a>
+		</div>
+	</div>
+	<div class="main-center">
+		<div class="main-left">
+			<div class="nav">
+				<i class="icon-th-list menu"></i>
+			</div>
+			<div class="subNavBox">
+				<ul>
+					<li class="active"><a href="javascript:;" data-src="user.html"><i class="icon-001"></i>用户管理</a></li>
+					<li><a href="javascript:;" data-src="zhibiao.html"><i class="icon-002"></i>指标管理</a></li>
+					<li><a href="javascript:;" data-src="biaozhun.html"><i class="icon-003"></i>标准管理</a></li>
+					<li><a href="javascript:;" data-src="jueyunzi.html"><i class="icon-004"></i>绝缘子管理</a></li>
+					<li><a href="javascript:;" data-src="pinggu.html"><i class="icon-005"></i>评估管理</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-container">
+			<p class="nav">
+				<i class="icon-map-marker"></i><span class="loc">当前位置</span>:<span class="loc">评估管理</span>>寿命评估列表
+			</p>
+			<div id="mainFrameContainer"class="contain">
+				<iframe src="user.html" name="mainFrame" id="mainFrame" frameborder="no" scrolling="auto" hidefocus=""></iframe>
+			</div>
+		</div>	
+	</div>
+	<div class="main-footer">
+		<p>版权所有：中国南方电网</p>
+	</div>
+</body>
+<script src="static/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		//左侧菜单 展开 收起
+		(function(){
+			$('.menu').click(function(){
+				$(this).parents('.main-center').toggleClass('active');
+			});
+		})();
+
+        //侧边栏js
+		(function(){
+			var src = "";
+			$('.subNavBox ul li').click(function(){
+				$(this).addClass('active').siblings('li').removeClass('active');
+				src=$(this).find('a').attr('data-src');
+				$('#mainFrame').attr('src',src);
+			})
+		})();
+	});
+</script>
+</html>

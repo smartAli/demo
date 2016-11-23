@@ -1,0 +1,225 @@
+.innerbody{
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+}
+.main-top{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 82px;
+    z-index: 11;
+    background: url(./images/index-header.png) no-repeat #225492;
+}
+.main-top h4{
+	font-size: 30px;
+	color: #fff;
+	padding-left:75px; 
+	position: relative;
+	margin-top:25px; 
+	font-weight:normal;
+}
+.main-top h4 .logo{
+	width: 53px;
+	height: 39px;
+	background: url(./images/index-logo.png) no-repeat;
+	position: absolute;
+	left: 10px;
+	top: 0;
+}
+.main-top_right{
+	position: absolute;
+	top: 27px;
+	right: 10px;
+}
+.main-top_right_btn{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: url("images/header-icon.png") no-repeat;
+	margin-right: 15px;
+}
+.main-top_right_btn_01{
+	background-position: 5px 0;
+}
+.main-top_right_btn_02{
+	background-position: -45px 0;
+}
+.main-top_right_btn_03{
+	background-position: -100px 0;
+}
+.main-top_right_btn:hover{
+	opacity:.8;
+}
+.main-top_right_btn_01:active{
+	background-position: 5px -45px;
+}
+.main-top_right_btn_02:active{
+	background-position: -45px -45px;
+}
+.main-top_right_btn_03:active{
+	background-position: -100px -45px;
+}
+.main-footer{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    z-index: 11;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background: #225492;
+}
+.main-center{
+	/*margin-top:82px;
+	margin-bottom: 32px; 
+	position: relative;
+	height: 800px;
+	background-color: #f7f7f7;*/
+	position: absolute;
+	top: 82px;
+	bottom: 32px;
+	height: auto;
+	width: 100%;
+	background-color: #f7f7f7;
+}
+.main-left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    z-index: 10;
+    overflow: hidden;
+    border-right: 1px solid #c0c5c9;
+	transition: all ease 0.2s;-webkit-transition: all ease 0.2s;
+}
+.main-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 240px;
+    overflow: hidden;
+	transition: all ease 0.2s;-webkit-transition: all ease 0.2s;
+}
+.nav{
+	height: 36px;
+	line-height: 36px;
+	background-color: #d9dee2;
+	font-size: 14px;
+	border-bottom:1px solid #c0c5c9; 
+}
+.menu{
+	margin-right: 12px;
+	margin-top: 10px;
+	float: right;
+}
+.icon-map-marker{
+	margin:0 10px;
+	position: relative;
+	top: 2px;
+}
+.loc{
+	margin: 0 5px;
+}
+.subNavBox li{
+	height: 37px;
+	line-height: 37px;
+	border-bottom: 1px solid #e0e0e0;
+	border-top: 1px solid #ffffff;
+	color: #000;
+	font-size: 14px;
+	padding-left: 45px;
+	position: relative;
+	overflow: hidden;
+	
+}
+.subNavBox li i{
+	/*margin: 0 8px 0 15px;*/
+	position: absolute;
+	top: 3px;
+	left: 10px;
+}
+.subNavBox li.active{
+	border-left:3px solid #225491;
+	color: #225491; 
+}
+.subNavBox li.active a{
+	color: #225491; 
+}
+.subNavBox li a{
+	display: block;
+}
+.subNavBox li [class^="icon-"], [class*=" icon-"]{
+	width: 30px;
+	height: 30px;
+	background-image: url("images/left-nev-img.png");
+}
+.subNavBox li .icon-001{
+	background-position:4px 3px;
+}
+.subNavBox li .icon-002{
+	background-position:4px -34px;
+}
+.subNavBox li .icon-003{
+	background-position:4px -72px;
+}
+.subNavBox li .icon-004{
+	background-position:4px -108px;
+}
+.subNavBox li .icon-005{
+	background-position:4px -148px;
+}
+.subNavBox li.active .icon-001{
+	background-position:-48px 3px;
+}
+.subNavBox li.active .icon-002{
+	background-position:-48px -34px;
+}
+.subNavBox li.active .icon-003{
+	background-position:-48px -72px;
+}
+.subNavBox li.active .icon-004{
+	background-position:-48px -108px;
+}
+.subNavBox li.active .icon-005{
+	background-position:-48px -148px;
+}
+.subNavBox li:hover{
+	background: #f2f2f2;
+}
+.contain{ position: absolute;
+	top: 37px;
+	left: 0;
+	right: 0;
+	bottom:0;
+	height: auto;
+	width: 100%;
+}
+#mainFrame {  width: 100%; height: 100%;  z-index: 5;  }
+
+.main-center.active .main-left{
+	width:45px;
+	transition: all ease 0.2s;-webkit-transition: all ease 0.2s;
+}
+.main-center.active .subNavBox ul{
+	/*display: none;*/
+}
+.main-center .subNavBox ul{
+	display: block;
+	overflow: hidden;
+}
+
+.main-center.active .main-container{
+	left:45px;
+	transition: all ease 0.2s;
+	-webkit-transition: all ease 0.2s;
+}
+.main-center .menu{ cursor:  pointer}
