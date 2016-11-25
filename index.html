@@ -21,13 +21,29 @@
 				<i class="icon-th-list menu"></i>
 			</div>
 			<div class="subNavBox">
-				<ul>
-					<li class="active"><a href="javascript:;" data-src="user.html"><i class="icon-001"></i>用户管理</a></li>
-					<li><a href="javascript:;" data-src="zhibiao.html"><i class="icon-002"></i>指标管理</a></li>
-					<li><a href="javascript:;" data-src="biaozhun.html"><i class="icon-003"></i>标准管理</a></li>
-					<li><a href="javascript:;" data-src="jueyunzi.html"><i class="icon-004"></i>绝缘子管理</a></li>
-					<li><a href="javascript:;" data-src="pinggu.html"><i class="icon-005"></i>评估管理</a></li>
-				</ul>
+				<div class="item active">
+					<a href="javascript:;"><i class="icon-001"></i>用户管理</a>
+					<div class="submenu">
+						<ul>
+							<li><a href="javascript:;" data-src="user.html"><span>子菜单</span></a></li>
+							<li><a href="javascript:;" data-src="user.html"><span>子菜单</span></a></li>
+							<li><a href="javascript:;" data-src="user.html"><span>子菜单</span></a></li>
+							<li><a href="javascript:;" data-src="user.html"><span>子菜单</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item">
+					<a href="javascript:;"><i class="icon-002"></i>指标管理</a>
+				</div>
+				<div class="item">
+					<a href="javascript:;"><i class="icon-003"></i>标准管理</a>
+				</div>
+				<div class="item">
+					<a href="javascript:;"><i class="icon-004"></i>绝缘子管理</a>
+				</div>
+				<div class="item">
+					<a href="javascript:;"><i class="icon-005"></i>评估管理</a>
+				</div>
 			</div>
 		</div>
 		<div class="main-container">
@@ -57,8 +73,8 @@
         //侧边栏js
 		(function(){
 			var src = "";
-			$('.subNavBox ul li').click(function(){
-				$(this).addClass('active').siblings('li').removeClass('active');
+			$('.subNavBox .item').click(function(){
+				$(this).addClass('active').siblings('.item').removeClass('active');
 				src=$(this).find('a').attr('data-src');
 				$('#mainFrame').attr('src',src);
 			})

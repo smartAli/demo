@@ -129,70 +129,83 @@
 .loc{
 	margin: 0 5px;
 }
-.subNavBox li{
+.subNavBox .item{
 	height: 37px;
 	line-height: 37px;
 	border-bottom: 1px solid #e0e0e0;
 	border-top: 1px solid #ffffff;
 	color: #000;
 	font-size: 14px;
-	padding-left: 45px;
+	/*padding-left: 45px;*/
 	position: relative;
 	overflow: hidden;
 	
 }
-.subNavBox li i{
-	/*margin: 0 8px 0 15px;*/
-	position: absolute;
-	top: 3px;
-	left: 10px;
+.subNavBox .item a{
+	height: 37px;
+	overflow: hidden;
 }
-.subNavBox li.active{
+.subNavBox .item i{
+	position: relative;
+    top: -3px;
+    left: 10px;
+    margin-right: 15px;
+}
+.subNavBox .item.active{
 	border-left:3px solid #225491;
 	color: #225491; 
+	height: auto;
 }
-.subNavBox li.active a{
+.subNavBox .item.active .submenu li{
+	border-top: 1px solid #e0e0e0;
+	/*padding-left: 60px;*/
+	/*text-align: center;*/
+}
+.subNavBox .item.active .submenu li span{
+	padding-left: 60px;
+}
+.subNavBox .item.active a{
 	color: #225491; 
 }
-.subNavBox li a{
+.subNavBox .item a{
 	display: block;
 }
-.subNavBox li [class^="icon-"], [class*=" icon-"]{
+.subNavBox .item [class^="icon-"], [class*=" icon-"]{
 	width: 30px;
 	height: 30px;
 	background-image: url("images/left-nev-img.png");
 }
-.subNavBox li .icon-001{
+.subNavBox .item .icon-001{
 	background-position:4px 3px;
 }
-.subNavBox li .icon-002{
+.subNavBox .item .icon-002{
 	background-position:4px -34px;
 }
-.subNavBox li .icon-003{
+.subNavBox .item .icon-003{
 	background-position:4px -72px;
 }
-.subNavBox li .icon-004{
+.subNavBox .item .icon-004{
 	background-position:4px -108px;
 }
-.subNavBox li .icon-005{
+.subNavBox .item .icon-005{
 	background-position:4px -148px;
 }
-.subNavBox li.active .icon-001{
+.subNavBox .item.active .icon-001{
 	background-position:-48px 3px;
 }
-.subNavBox li.active .icon-002{
+.subNavBox .item.active .icon-002{
 	background-position:-48px -34px;
 }
-.subNavBox li.active .icon-003{
+.subNavBox .item.active .icon-003{
 	background-position:-48px -72px;
 }
-.subNavBox li.active .icon-004{
+.subNavBox .item.active .icon-004{
 	background-position:-48px -108px;
 }
-.subNavBox li.active .icon-005{
+.subNavBox .item.active .icon-005{
 	background-position:-48px -148px;
 }
-.subNavBox li:hover{
+.subNavBox .item a:hover{
 	background: #f2f2f2;
 }
 .contain{ position: absolute;
@@ -212,10 +225,10 @@
 .main-center.active .subNavBox ul{
 	/*display: none;*/
 }
-.main-center .subNavBox ul{
+/*.main-center .subNavBox ul{
 	display: block;
 	overflow: hidden;
-}
+}*/
 
 .main-center.active .main-container{
 	left:45px;
